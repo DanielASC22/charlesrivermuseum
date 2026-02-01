@@ -139,15 +139,17 @@ const EducationPage = () => {
       {/* Featured Programs Grid - Met Museum Style */}
       <section className="py-16 bg-background">
         <div className="section-container">
-          <motion.h2
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="font-display text-3xl md:text-4xl font-bold text-secondary mb-12"
+            className="bg-secondary rounded-lg px-6 py-3 inline-block mb-12"
           >
-            Featured Programs
-          </motion.h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary-foreground">
+              Featured Programs
+            </h2>
+          </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {educationPrograms
@@ -197,7 +199,7 @@ const EducationPage = () => {
       </section>
 
       {/* Charles River Collaboratory Deep Dive */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-card">
         <div className="section-container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -278,13 +280,13 @@ const EducationPage = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <div className="bg-card rounded-xl p-8 inline-block">
-              <div className="inline-flex items-center justify-center gap-3 mb-4 bg-secondary px-4 py-2 rounded-full">
+            <div className="bg-secondary rounded-xl p-8 inline-block">
+              <div className="inline-flex items-center justify-center gap-3 mb-4 bg-secondary-foreground/20 px-4 py-2 rounded-full">
                 <MapPin className="w-6 h-6 text-secondary-foreground" />
                 <span className="text-secondary-foreground font-medium">Guided Experiences</span>
               </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-cream mb-4">Industry & Innovation Tours</h2>
-              <p className="text-cream/80 max-w-2xl mx-auto">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-secondary-foreground mb-4">Industry & Innovation Tours</h2>
+              <p className="text-secondary-foreground/90 max-w-2xl mx-auto">
                 Four unique tour programs exploring the world's first modern factory, the stories of mill workers, and the
                 evolution of American manufacturing.
               </p>
@@ -329,7 +331,7 @@ const EducationPage = () => {
             viewport={{ once: true }}
             className="text-center mt-10"
           >
-            <Button variant="outline" asChild>
+            <Button variant="outline" asChild className="text-foreground border-foreground hover:bg-foreground hover:text-card">
               <a href="/events">View Tour Schedule</a>
             </Button>
           </motion.div>
