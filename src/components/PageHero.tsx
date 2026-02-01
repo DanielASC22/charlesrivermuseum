@@ -10,15 +10,15 @@ interface PageHeroProps {
 export const PageHero = ({ title, subtitle, image, imageAlt }: PageHeroProps) => {
   return (
     <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
-      {/* Background Image with reduced opacity */}
+      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={image}
           alt={imageAlt || title}
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover"
         />
         {/* Gradient overlay for text legibility */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/30" />
       </div>
 
       {/* Content centered */}
