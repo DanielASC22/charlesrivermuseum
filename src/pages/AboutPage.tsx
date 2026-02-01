@@ -24,7 +24,7 @@ const AboutPage = () => {
         <PageHero
           title="About Us"
           subtitle="Preserving America's industrial heritage and inspiring future innovation"
-          image="https://images.squarespace-cdn.com/content/v1/559f7e16e4b009271a8fa1b5/1633637054271-1B8TAGECCX6RSZANOLC0/Museum+wide+angle+test.jpg"
+          image={aboutBackground}
         />
         <About />
       </main>
