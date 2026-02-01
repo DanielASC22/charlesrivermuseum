@@ -144,7 +144,7 @@ const EducationPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="font-display text-3xl md:text-4xl font-bold text-card mb-12"
+            className="font-display text-3xl md:text-4xl font-bold text-secondary mb-12"
           >
             Featured Programs
           </motion.h2>
